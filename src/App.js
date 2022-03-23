@@ -10,7 +10,7 @@ function App() {
   // {/* js 1149 */}  {/* js 1208 */}
   const [input, setInput] = useState("");
   
-  const [dark, setDark] = useState(0);
+  const [dark, setDark] = useState(true);
   
   const [darktitle, setDarktitle] = useState("Dark");
   
