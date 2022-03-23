@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
-}
+:root {
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  /* color-light */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  --color-light-btn: #cc0000;
+  --color-light-btn-text: white;
+  --color-light-left-background: #cecece;
+  --color-light-left-text: #2f4f4f;
+  
+  --color-light-right-background: white;
+  --color-light-right-text: #000000;
+
+  /* color-dark */
+
+  --color-dark-btn: #f0f8ff;
+  --color-dark-btn-text: 800080;
+  --color-dark-left-background: white;
+  --color-dark-left-text: #696969;
+  
+  --color-dark-right-background: #008080;
+  --color-dark-right-text: white;
   }
-}
+  
+  * {
+    text-decoration: none; 
+    border: 0;
+    margin: 0;
+    padding: 0.5rem;  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    box-sizing: border-box;  
+    transition: all 0.2s linear;   
+    scroll-behavior: smooth;
   }
-  to {
-    transform: rotate(360deg);
+
+  .myBtn {
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+  
+    background-color: var(--color-light-btn);
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+   
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px -1px px #5b6178;
+
+    margin: 0.5rem;
   }
+
+  .myBtn:active {
+    position: relative;
+    top: 1px;
+  }
+
+
+  /* 🥚 */
+
+  .title{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+  }
+
+  .world{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+  }
+
+
+
+  .world .world-left{     /*  */
+      background-color: var(--color-light-left-background);      
+      width: 45vw;
+      height: 80vh;
+      border: black solid 1px;
+    }
+    
+    .world .world-right{    /*  */
+        background-color: var(--color-light-right-background);      
+        width: 45vw;
+        height: 80vh;
+        border: black solid 1px;
+  }
+
+
+    /*  */
+    .myBtn {    
+        background-color: var(--color-light-btn);/*  */
+        color: var(--color-light-btn-text);/*  */
+    }
+
+
+    /*  */
+    .world-left .text {
+        color: var(--color-light-left-text);/*  */
+    }
+    .world-right .text {
+        color: var(--color-light-right-text);/*  */
+    }
+
+
+  /*  */
+  textarea{
+      width: 50vw;
+      height: 2rem;
+      border: 1px solid black;
+  }
+
+
+
+  /* Dark mode */
+
+  
+  .world .world-left.dark{     /*  */
+    background-color: var(--color-dark-left-background);      
+    width: 50vw;
+    height: 80vh;
+    border: black solid 1px;
+  }
+  
+  .world .world-right.dark{    /*  */
+      background-color: var(--color-dark-right-background);      
+      width: 50vw;
+      height: 80vh;
+      border: black solid 1px;
+}
+
+
+  /*  */
+  .myBtn.dark {    
+      background-color: var(--color-dark-btn);/*  */
+      color: var(--color-dark-btn-text);/*  */
+  }
+
+
+  /*  */
+  .world-left.dark .text {
+      color: var(--color-dark-left-text);/*  */
+  }
+  .world-right.dark .text {
+      color: var(--color-dark-right-text);/*  */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 🍀Bottom - Utility class */
+.block{
+    display: block;
 }
