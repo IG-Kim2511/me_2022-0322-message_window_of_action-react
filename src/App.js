@@ -45,12 +45,11 @@ function App() {
     if (dark) {
       setDarktitle("Light");
       setDark(false);     
-      createMessage(`${dateTime} Theme was set to light `)
+      createMessage(`${dateTime} Theme was set to light `)     
     }else {
       setDarktitle("Dark");  
       setDark(true);           
-      createMessage(`${dateTime} Theme was set to dark `)
-      
+      createMessage(`${dateTime} Theme was set to dark `)      
     }
 
    
@@ -68,9 +67,7 @@ function App() {
 
         
     worldLeft.classList.toggle("dark");    
-    worldRight.classList.toggle("dark");    
-     
-
+    worldRight.classList.toggle("dark");
   }
 
   
@@ -89,6 +86,7 @@ function App() {
       setI(i+1);
       button.innerHTML = `button ${i}`;
   
+      // 🦄innerHTML에 onClick 넣는 법
       button.onclick = function(){
           //  setData(`${dateTime} Button ${i} clicked`)
           createBtnMessage(`clicked`)
